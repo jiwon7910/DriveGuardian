@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "675577486964",
+    "firebase_url": "https://driveguardian-f0312-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "driveguardian-f0312",
+    "storage_bucket": "driveguardian-f0312.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675577486964:android:7e48ad2b0261d78d74fb21",
+        "android_client_info": {
+          "package_name": "com.wallaby.driveguardian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675577486964-trrmis41hschgas63shqmcai2eqj0i38.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wallaby.driveguardian",
+            "certificate_hash": "59acdc7d15ef257d6c835d369d53ea05adb7db91"
+          }
+        },
+        {
+          "client_id": "675577486964-h30u9pigd5k60tf9ski9hs6n8n0mgdcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAckq6Re6y6U2pDaTvAjs6hKPGxV6n9jqc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675577486964-h30u9pigd5k60tf9ski9hs6n8n0mgdcn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
