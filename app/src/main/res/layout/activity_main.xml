@@ -2,108 +2,38 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/request_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="0dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="16dp"
-        android:autofillHints="e-mail"
-        android:hint="Email"
-        android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints" />
-
-    <Button
-        android:id="@+id/logoutBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="97dp"
-        android:text="로그아웃"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/joinBtn"
-        tools:ignore="HardcodedText,MissingConstraints" />
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="17dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="44dp"
-        android:autofillHints="password"
-        android:hint="Password"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/loginBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/myTextView"
-        tools:ignore="HardcodedText,MissingConstraints" />
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+    </include>
 
     <TextView
-        android:id="@+id/myTextView"
-        android:layout_width="84dp"
-        android:layout_height="0dp"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="167dp"
-        android:layout_marginBottom="104dp"
-        android:text="로그인"
-        android:textColor="@android:color/black"
+        android:id="@+id/tv_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DriveGuardian"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/password"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints" />
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="111dp"
+        tools:layout_editor_absoluteY="193dp" />
 
     <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="28dp"
-        android:text="로그인"
-        app:layout_constraintBottom_toTopOf="@+id/joinBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        tools:ignore="HardcodedText,MissingConstraints" />
-
-    <Button
-        android:id="@+id/noLoginBtn"
-        android:layout_width="0dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="14dp"
-        android:text="비회원 로그인"
-        app:layout_constraintBaseline_toBaselineOf="@+id/joinBtn"
-        app:layout_constraintEnd_toStartOf="@+id/joinBtn"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="HardcodedText,MissingConstraints" />
-
-    <Button
-        android:id="@+id/joinBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="19dp"
-        android:layout_marginBottom="25dp"
-        android:text="회원가입"
-        app:layout_constraintBottom_toTopOf="@+id/logoutBtn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/noLoginBtn"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
-        tools:ignore="HardcodedText,MissingConstraints" />
+        android:id="@+id/btn_logout"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_bg"
+        android:text="로그아웃"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="611dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

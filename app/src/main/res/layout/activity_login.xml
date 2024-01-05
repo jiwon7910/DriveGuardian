@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001939"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DriveGuardian"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="147dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_round"
+        android:text="login"
+        android:textAllCaps="false"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="472dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,MissingConstraints,RtlHardcoded"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        android:id="@+id/et_login_id"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:background="@drawable/edit_bg"
+        android:ems="10"
+        android:hint=" ID"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/gray"
+        tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <EditText
+        android:id="@+id/et_login_pw"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edit_bg"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/gray"
+        tools:ignore="Autofill,HardcodedText,MissingConstraints,RtlSymmetry"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="373dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="331dp"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:text="|"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="118dp"
+        android:layout_height="64dp"
+
+        android:background="#00ff0000"
+        android:text="Register"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="220dp"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <Button
+        android:id="@+id/btn_register2"
+        android:layout_width="150dp"
+        android:layout_height="68dp"
+        android:background="#00ff0000"
+        android:text="Find password"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="536dp" />
+
+    <CheckBox
+        android:id="@+id/login_chk"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:text="ID 기억하기"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="421dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
