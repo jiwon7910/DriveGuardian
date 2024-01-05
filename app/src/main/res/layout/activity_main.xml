@@ -9,31 +9,32 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/toolbar"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
-    </include>
+        layout="@layout/toolbar"></include>
 
     <TextView
         android:id="@+id/tv_main_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="600dp"
         android:text="DriveGuardian"
-        android:textSize="30sp"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="111dp"
-        tools:layout_editor_absoluteY="193dp" />
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <Button
         android:id="@+id/btn_logout"
         android:layout_width="100dp"
-        android:layout_height="48dp"
-        android:background="@drawable/button_bg"
+        android:layout_height="60dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="600dp"
+        android:background="#00ff0000"
         android:text="로그아웃"
-        android:textColor="@color/white"
+        android:textColor="@color/gray"
         android:textSize="12sp"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="169dp"
-        tools:layout_editor_absoluteY="611dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

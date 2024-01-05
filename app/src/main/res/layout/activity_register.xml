@@ -7,102 +7,119 @@
     android:background="#001734"
     tools:context=".RegisterActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="회원가입"
-        android:textColor="@color/white"
-        android:textSize="45sp"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="122dp"
-        tools:layout_editor_absoluteY="68dp" />
-
-
-    <EditText
-        android:id="@+id/et_register_id"
-        android:layout_width="230dp"
-        android:layout_height="48dp"
-        android:background="@drawable/edit_bg"
-        android:ems="10"
-        android:hint=" E-mail"
-        android:textColorHint="@color/gray"
-        android:inputType="textEmailAddress"
-        android:paddingStart="5dp"
-        tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="220dp" />
-
-    <EditText
-        android:id="@+id/et_register_pw"
-        android:layout_width="230dp"
-        android:layout_height="48dp"
-        android:background="@drawable/edit_bg"
-        android:ems="10"
-        android:hint="PASSWORD"
-        android:textColorHint="@color/gray"
-        android:inputType="textPersonName"
-        android:paddingStart="5dp"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="304dp" />
 
     <EditText
         android:id="@+id/et_register_nickname"
         android:layout_width="230dp"
         android:layout_height="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="436dp"
         android:background="@drawable/edit_bg"
+        android:textColor="@color/white"
         android:ems="10"
         android:hint="NAME"
-        android:textColorHint="@color/gray"
         android:inputType="textPersonName"
         android:paddingStart="5dp"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="389dp" />
+        android:textColorHint="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
-        android:id="@+id/tv_register_pw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="비밀번호"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="164dp"
+        android:text="회원가입"
         android:textColor="@color/white"
-        android:textSize="15sp"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="282dp" />
-
-
-    <TextView
-        android:id="@+id/tv_register_nickname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="이름"
-        android:textColor="@color/white"
-        android:textSize="15sp"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="367dp">
-    </TextView>
+        android:textSize="45sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_register_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="248dp"
         android:text="아이디"
         android:textColor="@color/white"
         android:textSize="15sp"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="198dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_register_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="416dp"
+        android:text="이름"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_register_pw"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="352dp"
+        android:background="@drawable/edit_bg"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_register_id"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="268dp"
+        android:background="@drawable/edit_bg"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:hint=" E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="5dp"
+        android:textColorHint="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,RtlSymmetry" />
 
     <Button
         android:id="@+id/btn_register_button"
         android:layout_width="230dp"
         android:layout_height="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="536dp"
         android:background="@drawable/button_round"
         android:text="회원가입"
-        tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="90dp"
-        tools:layout_editor_absoluteY="480dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_register_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="332dp"
+        android:text="비밀번호"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

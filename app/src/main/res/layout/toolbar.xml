@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="60dp"
@@ -12,13 +13,13 @@
         android:id="@+id/iv_save_back"
         android:layout_width="40dp"
         android:layout_height="33dp"
-        android:background="@drawable/ic_baseline_arrow_back_24"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
         app:layout_constraintEnd_toStartOf="@+id/tv_save_title"
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.481">
+        app:layout_constraintVertical_bias="0.481"
+        tools:ignore="ContentDescription">
     </ImageView>
 
 </androidx.appcompat.widget.Toolbar>

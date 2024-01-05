@@ -15,7 +15,6 @@ public class SplashActivity extends AppCompatActivity{
         public void run() {
             //splash 화면 실행 이후에 login 화면으로 넘어가는 코드
             Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
-//            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
             startActivity(intent);
             finish();
         }
