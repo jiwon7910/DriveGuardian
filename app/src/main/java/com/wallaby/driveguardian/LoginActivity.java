@@ -25,17 +25,17 @@ public class LoginActivity extends AppCompatActivity{
     private final FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     //자동로그인
-    //@Override
-    //protected void onStart() {
-    //    super.onStart();
+    @Override
+    protected void onStart() {
+        super.onStart();
 
-    //    FirebaseUser user = mAuth.getCurrentUser();
-    //    if ( user != null) {
-    //        Intent login_intent = new Intent(this, MainActivity.class);
-    //        startActivity(login_intent);
-    //        Toast.makeText(this, "자동 로그인 \n" + user.getEmail(), Toast.LENGTH_SHORT).show();
-    //    }
-    //}
+        FirebaseUser user = mAuth.getCurrentUser();
+        if ( user != null) {
+            Intent login_intent = new Intent(this, MainActivity.class);
+            startActivity(login_intent);
+            Toast.makeText(this, "자동 로그인 \n" + user.getEmail(), Toast.LENGTH_SHORT).show();
+        }
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
