@@ -121,10 +121,11 @@ public class DetectionActivity extends AppCompatActivity{
                     // Update mSelectedImage with the current image
                     mSelectedImage = imageBitmap;
 
+                    runFaceContourDetection();
+
                     // Close the imageProxy to release resources
                     imageProxy.close();
 
-                    runFaceContourDetection();
                 });
 
                 // Select back camera as a default
@@ -141,36 +142,6 @@ public class DetectionActivity extends AppCompatActivity{
         }
         }, ContextCompat.getMainExecutor(this));
     }
-    private boolean allPermissionsGranted() {
-        for (String permission : REQUIRED_PERMISSIONS) {
-            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        cameraExecutor.shutdown();
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-        if (requestCode == REQUEST_CODE_PERMISSIONS) {
-            if (allPermissionsGranted()) {
-                startCamera();
-            } else {
-                Toast.makeText(this,
-                        "Permissions not granted by the user.",
-                        Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        }
-    }
-
 
     private void runFaceContourDetection() {
         // Replace with code from the codelab to run face contour detection.
@@ -203,6 +174,35 @@ public class DetectionActivity extends AppCompatActivity{
             FaceContourGraphic faceGraphic = new FaceContourGraphic(mGraphicOverlay);
             mGraphicOverlay.add(faceGraphic);
             faceGraphic.updateFace(face);
+        }
+    }
+    private boolean allPermissionsGranted() {
+        for (String permission : REQUIRED_PERMISSIONS) {
+            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        cameraExecutor.shutdown();
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == REQUEST_CODE_PERMISSIONS) {
+            if (allPermissionsGranted()) {
+                startCamera();
+            } else {
+                Toast.makeText(this,
+                        "Permissions not granted by the user.",
+                        Toast.LENGTH_SHORT).show();
+                finish();
+            }
         }
     }
 
